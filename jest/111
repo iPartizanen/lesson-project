@@ -1,0 +1,53 @@
+commit cf044513d029afd8a185822404766a3385ff1bbb
+Author: Andrey Prisniak <aprisniak@lectrum.io>
+Date:   Tue Jul 2 15:19:34 2019 +0300
+
+    fix(source): fix auth
+
+commit abce1b5c4fecdfe3d603ac343de90bb7832a2e9f
+Author: Andrey Prisniak <aprisniak@lectrum.io>
+Date:   Tue Jul 2 13:01:20 2019 +0300
+
+    feat(source): lesson-9 solution
+
+commit 84fcbd7bc8d25add2876ae686f48730f13bd0708
+Author: Andrey Prisniak <aprisniak@lectrum.io>
+Date:   Tue Jul 2 11:15:37 2019 +0300
+
+    fix(source): fix eslint
+
+commit f31e0e994d789a32ac4f92f45ba56ab8d81bceb5
+Author: Andrey Prisniak <aprisniak@lectrum.io>
+Date:   Mon Jul 1 17:20:56 2019 +0300
+
+    chore(source): change base path
+
+commit 91132371500204c8e663be172dab4d931d7e2492
+Author: Andrey Prisniak <aprisniak@lectrum.io>
+Date:   Thu Jun 27 21:58:20 2019 +0300
+
+    feat(source): add middlewares
+
+commit f52ad5f5cef2e31cd48af10e1b0ba2927eaa3515
+Author: Andrey Prisniak <aprisniak@lectrum.io>
+Date:   Mon Jun 24 23:18:19 2019 +0300
+
+    feat(source): lesson-9
+
+commit 111c05a143ba35ebb6be81baa624f12e84bfcc9f
+Author: Andrey Prisniak <aprisniak@lectrum.io>
+Date:   Mon Jun 24 19:00:50 2019 +0300
+
+    chore(source): rename routers folder
+
+commit e09cbb5cee3568e50efbef363664d4c6e78dac19
+Author: Andrey Prisniak <aprisniak@lectrum.io>
+Date:   Mon Jun 24 15:48:42 2019 +0300
+
+    chore(source): update packages
+
+commit e91164b96ea39e2e7e25f66de4ab8c046c4fff9c
+Author: Andrey Prisniak <aprisniak@lectrum.io>
+Date:   Tue Jun 18 14:37:54 2019 +0300
+
+    feat(source): initial commit
