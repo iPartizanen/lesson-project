@@ -6,17 +6,18 @@ import { get, post } from './route';
 import { getByHash, putByHash, deleteByHash } from './hash';
 import { postEnrollByHash } from './hash/enroll';
 import { postExpelByHash } from './hash/expel';
+import { authenticate } from '../../utils';
 
 export const router = express.Router();
 
 router.get('/', get);
-router.post('/', post);
+router.post('/', [ authenticate ], post);
 
-router.get('/:classHash', getByHash);
-router.put('/:classHash', putByHash);
-router.delete('/:classHash', deleteByHash);
+router.get('/:classHash', [ authenticate ], getByHash);
+router.put('/:classHash', [ authenticate ], putByHash);
+router.delete('/:classHash', [ authenticate ], deleteByHash);
 
-router.post('/:classHash/enroll', postEnrollByHash);
-router.post('/:classHash/expel', postExpelByHash);
+router.post('/:classHash/enroll', [ authenticate ], postEnrollByHash);
+router.post('/:classHash/expel', [ authenticate ], postExpelByHash);
 
 export { router as classes };
