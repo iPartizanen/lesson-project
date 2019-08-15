@@ -3,7 +3,7 @@ import express from 'express';
 
 // Instruments
 import { app } from './server';
-import { getPort, getNodeEnv, logger } from './utils';
+import { getPort, getNodeEnv, logger, loggerErr } from './utils';
 
 // Routers
 import { auth, users, classes, lessons } from './routers';
@@ -14,9 +14,18 @@ app.use(express.json({ limit: '10kb' }));
 
 if (getNodeEnv() === 'development') {
     app.use((req, res, next) => {
-        logger.log('debug',
-            `${req.method} ${Date()} payload: ${JSON.stringify(req.body)}`);
+        logger.debug(
+            `${req.method} ${Date()} payload: ${JSON.stringify(req.body)}`
+        );
         next();
+    });
+}
+
+if (getNodeEnv() !== 'test') {
+    app.use((error, req, res, next) => {
+        const { name, message } = error;
+        loggerErr.error(`${name}: ${message}`);
+        res.status(500).json({ message });
     });
 }
 
